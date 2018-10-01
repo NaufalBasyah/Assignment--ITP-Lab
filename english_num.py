@@ -14,7 +14,7 @@ if len(y)==3:                               #if the number is 3 digits
     elif y[1:3]=="13":
         print(excep[2])
     elif int(y[1:3])<20 and int(y[1:3])>10:     #if the last 2 digits is in the "teen"s (11-19)
-        print(int(y[len(y)-1]),end="")          #to print the last 2 digit with the format lastnumber+teen
+        print(ones[int(y[len(y)-1])],end="")          #to print the last 2 digit with the format lastnumber+teen
         print("teen")
     elif int(y[1:3])<10:                        #if the middle digit is 0
         print(ones[int(y[len(y)-1])])           #print the last number acccording to the ones tupple
@@ -28,7 +28,7 @@ elif len(y)==2:                             #if the number is 2 digits
     elif y[0:2]=="13":
         print(excep[2])
     elif int(y[0:2])<20 and int(y[0:2])>10: #the number 14-99 will also follow the same format as it would in 3 digits above
-        print(int(y[len(y)-1]),end="")
+        print(ones[int(y[len(y)-1])],end="")
         print("teen")
     elif int(y[0:2])<10:
         print(ones[int(y[len(y)-1])])
