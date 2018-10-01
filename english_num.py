@@ -35,4 +35,7 @@ elif len(y)==2:                             #if the number is 2 digits
     else:
         print(tens[int(y[0])-1],ones[int(y[1])])
 elif len(y)==1:                            #if the number is 1 digit
-    print(ones[x])                         #will print the number according to the ones tupple
+    if x==0:                               #if input is "0"  it will print "Zero"
+        print("Zero")
+    else:
+        print(ones[x])                         #will print the number according to the ones tupple
